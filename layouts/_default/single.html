@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+    {{ partial "header.html"  }}
+    <body>
+
+    {{ "<!-- Wrapper -->" | safeHTML }}
+        <div id="wrapper">
+
+            {{ partial "nav.html" . }}
+
+        {{ "<!-- Main -->" | safeHTML }}
+            <div id="main" class="alt">
+
+                <!-- One -->
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>{{ .Title}}</h1>
+                            </header>
+                            <span class="image main"><img src="{{ .Site.Params.baseURL }}/img/blogs/{{ .Params.image }}" alt="" /></span>
+                            {{ .Content }}
+                        </div>
+                    </section>
+            </div>
+            
+        {{ "<!-- Footer -->" | safeHTML}}
+            {{ if .Site.Params.footer.enable }}
+                {{ partial "footer.html" . }}
+            {{ end }}
+        </div>
+
+    {{ "<!-- Scripts -->" | safeHTML}}
+        {{ partial "js.html" . }}
+
+    </body>
+</html>

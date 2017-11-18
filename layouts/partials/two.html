@@ -1,0 +1,12 @@
+{{ "<!-- Two -->" | safeHTML}}
+    <section id="two">
+        <div class="inner">
+            <header class="major">
+                <h2>{{ .Site.Params.Two.title}}</h2>
+            </header>
+            <p>{{ .Site.Params.Two.subtitle }}</p>
+            <ul class="actions">
+                <li><a href="{{ .Site.Params.Two.url | absURL}}" class="button next">{{ .Site.Params.Two.buttonText }}</a></li>
+            </ul>
+        </div>
+    </section>

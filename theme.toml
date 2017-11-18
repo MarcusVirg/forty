@@ -1,0 +1,18 @@
+name = "Forty"
+license = "Creative Commons Attribution 3.0"
+licenselink = "https://github.com/MarcusVirg/forty/blob/master/LICENSE.md"
+description = "A portfolio/blog website built for companies or personal freelancers."
+homepage = "//github.com/MarcusVirg/forty"
+tags = ["portfolio", "company", "contact form", "google analytics", "blog"]
+features = ["blog"]
+min_version = "0.29"
+
+[author]
+  name = "Marcus Virginia"
+  homepage = "https://marcusv.me"
+
+# If porting an existing theme
+[original]
+  author = "AJ"
+  name = "HTML5 Up"
+  homepage = "https://html5up.net/forty"

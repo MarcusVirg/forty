@@ -1,0 +1,14 @@
+{{ "<!-- Banner -->" | safeHTML}}
+    <section id="banner" class="major">
+        <div class="inner">
+            <header class="major">
+                <h1>{{ .Site.Params.Banner.title }}</h1>
+            </header>
+            <div class="content">
+                <p>{{ .Site.Params.Banner.subtitle }}</p>
+                <ul class="actions">
+                    <li><a href="#one" class="button next scrolly">{{ .Site.Params.Banner.buttonText }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>

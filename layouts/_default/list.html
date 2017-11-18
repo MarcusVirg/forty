@@ -1,0 +1,62 @@
+<html>
+{{ "<!-- Header -->" | safeHTML }}
+    {{ partial "header.html" . }}
+
+    <body>
+
+    {{ "<!-- Wrapper -->" | safeHTML }}
+        <div id="wrapper">
+
+        {{ partial "nav.html" . }}
+
+        {{ "<!-- Main -->" | safeHTML }}
+            <div id="main">
+
+                <section id="banner" class="style2">
+                    <div class="inner">
+                        <span class="image">
+                            <img src="{{ .Site.Params.baseURL }}/img/blogs/{{ .Params.image }}" alt="" />
+                        </span>
+                        <header class="major">
+                            <h1>{{ .Title }}</h1>
+                        </header>
+                        <div class="content">
+                            {{ .Content }}
+                        </div>
+                    </div>
+                </section>
+
+                <section id="two" class="spotlights">
+                    {{ range .Pages }}
+                    <section>
+                        <a href="{{ .Slug }}" class="image">
+							<img src="{{ .Site.Params.baseURL }}/img/blogs/{{ .Params.image }}" alt="" data-position="center center" />
+						</a>
+                        <div class="content">
+                            <div class="inner">
+                                <header class="major">
+                                    <h3>{{ .Title }}</h3>
+                                </header>
+                                <p>{{ .Description }}</p>
+                                <ul class="actions">
+                                    <li><a href="{{ .Slug }}" class="button">Learn more</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    {{ end }}
+                </section>
+            </div>
+            
+        {{ "<!-- Footer -->" | safeHTML}}
+			{{ if .Site.Params.footer.enable }}
+				{{ partial "footer.html" . }}
+            {{ end }}
+        
+        </div>
+
+    {{ "<!-- Scripts -->" | safeHTML}}
+        {{ partial "js.html" . }}
+        
+    </body>
+</html>

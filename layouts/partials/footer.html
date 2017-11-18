@@ -1,0 +1,16 @@
+{{ "<!-- Footer -->" | safeHTML}}
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                {{ range .Site.Params.Footer.social }}
+                    <li><a href="{{ .url }}" class="icon alt {{ .icon }}" target="_blank"><span class="label">{{ .label }}</span></a></li>
+                {{ end }}
+            </ul>
+            <ul class="copyright">
+                <li>&copy; {{ .Site.Params.Footer.copyright }}</li>
+                {{ range .Site.Params.Footer.quicklinks}}
+                <li>{{ .text }} <a href="{{ .url }}">{{ .alt }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+    </footer>

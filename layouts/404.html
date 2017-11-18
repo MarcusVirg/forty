@@ -1,0 +1,30 @@
+<!-- Here you can create a custom 404 page when user finds a broken link or page. -->
+<!DOCTYPE HTML>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+	{{ partial "header.html" . }}
+	<body>
+
+	{{ "<!-- Wrapper -->" | safeHTML }}
+		<div id="wrapper">
+
+			{{ partial "nav.html" . }}
+
+		{{ "<!-- Main -->" | safeHTML }}
+			<div id="main">
+                <h1>{{ .Site.Params.Error404.heading }}</h1>
+                <p>{{ .Site.Params.Error404.text }}</p>
+			</div>
+
+		{{ "<!-- Footer -->" | safeHTML}}
+			{{ if .Site.Params.Footer.enable }}
+				{{ partial "footer.html" . }}
+			{{ end }}
+
+		</div>
+
+	{{ "<!-- Scripts -->" | safeHTML}}
+		{{ partial "js.html" . }}
+
+	</body>
+</html>
