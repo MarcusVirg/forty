@@ -2,7 +2,9 @@
 
 Forty theme is a multi page website built around a grid of image tiles that transition into its content pages. It is a ported theme built by [HTML5 UP](https://html5up.net/). This theme contains many styled elements and features a contact form. Built for blogs, businesses, or freelancers.
 
-Insert screenshot here
+![Forty Screenshot](https://github.com/MarcusVirg/forty/blob/master/images/screenshot.png?raw=true)
+
+For a demo go to [Forty Demo](https://html5up.net/uploads/demos/forty/).
 
 ## Installation
 
@@ -28,7 +30,7 @@ After cloning Forty or adding it as a submodule, there are a few other things yo
 
 ### Config File
 
-There is an [`exampleSite`](//github.com/digitalcraftsman/hugo-agency-theme/tree/master/exampleSite) folder for this theme. Copy the file called [`config.toml`](//github.com/digitalcraftsman/hugo-agency-theme/blob/master/exampleSite/config.toml) to your websites root directory.
+There is an [`exampleSite`](//github.com/MarcusVirg/forty/tree/master/exampleSite) folder for this theme. Copy the file called [`config.toml`](//github.com/MarcusVirg/forty/blob/master/exampleSite/config.toml) to your websites root directory.
 Here you can customize some of the text and content on the website.
 
 ### Change background
@@ -46,6 +48,9 @@ Replace `myBlog.md` with your own file name. You can also just copy the markdown
 
 ### Contact form
 
+This page is static so [formspree.io](https://formspree.io/) is used to forward the message to your email. Visitors can send you up to 1,000 emails per month for free.
+You can set your email in the [`config.toml`](//github.com/MarcusVirg/forty/blob/master/exampleSite/config.toml) file. You then have to confirm your email with formspree and will begin recieving messages after you do so. I recommend only having the contact form on one page, most likely the index.html, because you have to confirm for every URL the contact form is on.
+
 ### Preview
 
 You can see a preview of your site while developing it by running Hugo's built-in webserver.
@@ -56,10 +61,14 @@ Now enter [`localhost:1313`](http://localhost:1313/) in the address bar of your 
 
 `NOTE: In the command above -D loads content that is marked as a draft. You can switch content from draft to final by changing the frontmatter value of draft to false in the .md file for the content.`
 
+## Contributing
+
+Find a bug or want a new feature? Use the issue tracker or submit a pull request.
+
 ## License
 
 This theme is released under the Creative Commons Attribution 3.0.
-For more information read the [License](//github.com/digitalcraftsman/hugo-agency-theme/blob/master/LICENSE).
+For more information read the [License](//github.com/MarcusVirg/forty/blob/master/LICENSE.md).
 
 ## Acknowledgements
 
