@@ -12,8 +12,10 @@
 
 		{{ "<!-- Main -->" | safeHTML }}
 			<div id="main">
-                <h1>{{ .Site.Params.Error404.heading }}</h1>
-                <p>{{ .Site.Params.Error404.text }}</p>
+				<div class="inner">
+					<h1>{{ .Site.Params.Error404.heading }}</h1>
+					<p>{{ .Site.Params.Error404.text }}</p>
+				</div>
 			</div>
 
 		{{ "<!-- Footer -->" | safeHTML}}
