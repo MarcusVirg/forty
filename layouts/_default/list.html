@@ -14,9 +14,11 @@
 
                 <section id="banner" class="style2">
                     <div class="inner">
+			{{ if .Params.image }}
                         <span class="image">
                             <img src="{{ .Site.Params.baseURL }}/img/{{ .Params.image }}" alt="" />
                         </span>
+			{{ end }}
                         <header class="major">
                             <h1>{{ .Title }}</h1>
                         </header>
