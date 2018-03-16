@@ -32,7 +32,7 @@
                     {{ range .Pages }}
                     <section>
                         <a href="{{ .Slug }}" class="image">
-							<img src="{{ .Site.Params.baseURL }}/img/blogs/{{ .Params.image }}" alt="" data-position="center center" />
+							<img src="{{ .Site.Params.baseURL }}/img/{{ .Section }}/{{ .Params.image }}" alt="" data-position="center center" />
 						</a>
                         <div class="content">
                             <div class="inner">
