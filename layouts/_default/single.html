@@ -18,7 +18,9 @@
                             <header class="major">
                                 <h1>{{ .Title}}</h1>
                             </header>
-                            <span class="image main"><img src="{{ .Site.Params.baseURL }}/img/blogs/{{ .Params.image }}" alt="" /></span>
+                            {{ if .Params.image }}
+                                <span class="image main"><img src="{{ .Site.Params.baseURL }}/img/{{ .Section }}/{{ .Params.image }}" alt="" /></span>
+                            {{ end }}
                             {{ .Content }}
                         </div>
                     </section>
