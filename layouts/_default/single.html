@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 
-    {{ partial "header.html"  }}
+    {{ partial "header.html" . }}
     <body>
 
     {{ "<!-- Wrapper -->" | safeHTML }}
@@ -22,6 +22,8 @@
                             {{ .Content }}
                         </div>
                     </section>
+            {{ "<!-- Disqus Inject -->" | safeHTML }}
+                {{ partial "disqus.html" . }}
             </div>
             
         {{ "<!-- Footer -->" | safeHTML}}

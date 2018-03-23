@@ -7,6 +7,9 @@ theme = "forty"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 
+# Enter your disqus shortname to enable comments
+disqusShortname = ""
+
 [params]
   # You can use Markdown syntax for urls [text](//url.to/source)
   # To create multi-line text in strings use the """example Text""" format
@@ -186,6 +189,7 @@ googleAnalytics = ""
     enable = true
     copyright = "Company Name"
 
+    # Uses font awesome icons
     [[params.footer.social]]
       icon = "fa-twitter"
       url= "https://www.twitter.com"
