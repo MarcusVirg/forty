@@ -25,7 +25,9 @@
                         </div>
                     </section>
             {{ "<!-- Disqus Inject -->" | safeHTML }}
-                {{ partial "disqus.html" . }}
+                {{ if .Site.DisqusShortname }}
+                  {{ partial "disqus.html" . }}
+                {{ end }}
             </div>
             
         {{ "<!-- Footer -->" | safeHTML}}
