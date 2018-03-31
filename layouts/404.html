@@ -14,7 +14,7 @@
 			<div id="main">
 				<div class="inner">
 					<h1>{{ .Site.Params.Error404.heading }}</h1>
-					<p>{{ .Site.Params.Error404.text }}</p>
+					<p>{{ .Site.Params.Error404.text | markdownify }}</p>
 				</div>
 			</div>
 
