@@ -27,7 +27,7 @@
                         <span class="icon alt fa-envelope"></span>
                         {{ range .Site.Params.Contact.email }}
                         <h3>{{ .title }}</h3>
-                        <a href="#">{{ .email }}</a>
+                        <a href="mailto:{{ .email }}">{{ .email }}</a>
                         {{ end }}
                     </div>
                 </section>
