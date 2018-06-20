@@ -77,4 +77,4 @@ For more information read the [License](//github.com/MarcusVirg/forty/blob/maste
 Thanks to:
 
 - AJ from [HTML5 UP](https://html5up.net/) for creating the theme
-- [Steve Francia](//github.com/spf13), [digitalcraftsman](//github.com/digitalcraftsman), and others for creating and maintaining Hugo.
+- [Bjørn Erik Pedersen](https://github.com/bep), [Steve Francia](//github.com/spf13), [digitalcraftsman](//github.com/digitalcraftsman), and others for creating and maintaining Hugo.
