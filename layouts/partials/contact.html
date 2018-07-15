@@ -45,9 +45,15 @@
                         <span class="icon alt fa-home"></span>
                         {{ range .Site.Params.Contact.address }}
                         <h3>{{ .title }}</h3>
-                        <span>{{ .street }}<br />
-                        {{ .city }}<br />
-                        {{ .country }}</span>
+                        <span>{{ if .name }}{{ .name }}<br />{{end}}
+                        {{ if .street }}{{ .street }}<br />{{end}}
+                        {{ if .address }}{{ .address }}<br />{{end}}
+                        {{ if .address2 }}{{ .address2 }}<br />{{end}}
+                        {{ if .city }}{{ .city }}{{ end }}
+                        {{ if .state }}{{ .state }},{{ end }}
+                        {{ if .zip }}{{ .zip }}{{ end }}
+                        {{ if .country }} <br /> {{ .country }} {{ end }}
+                        </span>
                         {{ end }}
                     </div>
                 </section>
