@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
-	{{ .Hugo.Generator }}
+	{{ hugo.Generator }}
 	<title>{{ .Title }}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
 	{{ "<!-- Stylesheets -->" | safeHTML }}
 	<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
