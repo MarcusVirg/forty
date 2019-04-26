@@ -5,7 +5,7 @@ description = "A portfolio/blog website built for companies or personal freelanc
 homepage = "//github.com/MarcusVirg/forty"
 tags = ["portfolio", "company", "contact form", "google analytics", "blog"]
 features = ["blog"]
-min_version = "0.29"
+min_version = "0.55"
 
 [author]
   name = "Marcus Virginia"
