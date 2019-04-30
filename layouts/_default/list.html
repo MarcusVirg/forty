@@ -31,7 +31,7 @@
                 <section id="two" class="spotlights">
                     {{ range .Pages }}
                     <section>
-                        <a href="{{ .URL }}" class="image">
+                        <a href="{{ .Permalink }}" class="image">
 							<img src="{{ .Site.Params.baseURL }}/img/{{ .Section }}/{{ .Params.image }}" alt="" data-position="center center" />
 						</a>
                         <div class="content">
@@ -41,7 +41,7 @@
                                 </header>
                                 <p>{{ .Description }}</p>
                                 <ul class="actions">
-                                    <li><a href="{{ .URL }}" class="button">Learn more</a></li>
+                                    <li><a href="{{ .Permalink }}" class="button">Learn more</a></li>
                                 </ul>
                             </div>
                         </div>
