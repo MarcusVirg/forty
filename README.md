@@ -37,7 +37,7 @@ Here you can customize some of the text and content on the website.
 
 ### Change background
 
-You can change the background by replacing the banner.jpg file with your own image in the folder forty/static/img. The image must be in jpg format and the filename must be called banner.jpg otherwise it will not work.
+You can change the background by replacing the banner-bk.jpg file with your own image in the folder forty/static/img. The image must be in jpg format and the filename must be called banner-bk.jpg otherwise it will not work.
 
 ### Create new project/blog
 
