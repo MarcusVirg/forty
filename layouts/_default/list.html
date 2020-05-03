@@ -12,7 +12,7 @@
         {{ "<!-- Main -->" | safeHTML }}
             <div id="main">
 
-                <section id="banner" class="{{ if .Params.style }}{{ .Params.style }}{{ else }}style1{{end}}">
+                <section id="banner" {{ if .Params.style }} class="{{ .Params.style }}" {{end}}>
                     <div class="inner">
 			{{ if .Params.image }}
                         <span class="image">
