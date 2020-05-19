@@ -32,8 +32,16 @@
                     <section id="one">
                         <div class="inner">
                             {{ .Content }}
+                            {{ if .Params.nextURL }}
+                              <ul class="actions">
+                                <li><a href="{{ .Site.Params.baseURL }}/{{ .Params.nextURL }}" class="button next scrolly">
+                                  {{ if .Params.nextText }}{{ .Params.nextText }}{{ end }}
+                                </a></li>
+                              </ul>
+                            {{ end }}
                         </div>
                     </section>
+
             {{ "<!-- Disqus Inject -->" | safeHTML }}
                 {{ if .Site.DisqusShortname }}
                   {{ partial "disqus.html" . }}
