@@ -1842,11 +1842,9 @@
 			}
 
 		header.major > p {
-			font-size: 0.7em;
+			font-size: 1.1em;
 			font-weight: 600;
-			letter-spacing: 0.25em;
 			margin-bottom: 0;
-			text-transform: uppercase;
 		}
 
 		body.is-ie header.major > :first-child:after {
@@ -3502,7 +3500,7 @@
 				}
 
 				#banner > .inner .content p {
-					font-size: 1em;
+					font-size: 1.1em;
 					font-weight: 600;
 				}
 
