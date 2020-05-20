@@ -3502,10 +3502,8 @@
 				}
 
 				#banner > .inner .content p {
-					font-size: 0.7em;
+					font-size: 1em;
 					font-weight: 600;
-					letter-spacing: 0.25em;
-					text-transform: uppercase;
 				}
 
 		#banner.major {
@@ -3976,11 +3974,11 @@
 		visibility: visible;
 	}
 
-		body.is-menu-visible #menu .inner {
-			-moz-transform: none;
-			-webkit-transform: none;
-			-ms-transform: none;
-			transform: none;
-			opacity: 1;
-			visibility: visible;
-		}
+	body.is-menu-visible #menu .inner {
+		-moz-transform: none;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		opacity: 1;
+		visibility: visible;
+	}
