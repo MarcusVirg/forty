@@ -12,7 +12,7 @@
         {{ "<!-- Main -->" | safeHTML }}
             <div id="main">
 
-                <section id="banner" class="style2">
+                <section id="banner" {{ if .Params.style }} class="{{ .Params.style }}" {{end}}>
                     <div class="inner">
 			{{ if .Params.image }}
                         <span class="image">
@@ -31,9 +31,6 @@
                 <section id="two" class="spotlights">
                     {{ range .Pages }}
                     <section>
-                        <a href="{{ .Permalink }}" class="image">
-							<img src="{{ .Site.Params.baseURL }}/img/{{ .Section }}/{{ .Params.image }}" alt="" data-position="center center" />
-						</a>
                         <div class="content">
                             <div class="inner">
                                 <header class="major">

@@ -10,20 +10,38 @@
             {{ partial "nav.html" . }}
 
         {{ "<!-- Main -->" | safeHTML }}
-            <div id="main" class="alt">
+            <div id="main">
+
+                <section id="banner" {{ if .Params.style }} class="{{ .Params.style }}" {{end}}>
+                    <div class="inner">
+			{{ if .Params.image }}
+                        <span class="image">
+                            <img src="{{ .Site.Params.baseURL }}/img/{{ .Params.image }}" alt="" />
+                        </span>
+			{{ end }}
+                        <header class="major">
+                            <h1>{{ .Title }}</h1>
+                        </header>
+                        <div class="content">
+			    <p>{{ .Params.subtitle | safeHTML }}</p>
+                        </div>
+                    </div>
+                </section>
 
                 <!-- One -->
                     <section id="one">
                         <div class="inner">
-                            <header class="major">
-                                <h1>{{ .Title}}</h1>
-                            </header>
-                            {{ if .Params.image }}
-                                <span class="image main"><img src="{{ .Site.Params.baseURL }}/img/{{ .Section }}/{{ .Params.image }}" alt="" /></span>
-                            {{ end }}
                             {{ .Content }}
+                            {{ if .Params.nextURL }}
+                              <ul class="actions">
+                                <li><a href="{{ .Site.Params.baseURL }}/{{ .Params.nextURL }}" class="button next scrolly">
+                                  {{ if .Params.nextText }}{{ .Params.nextText }}{{ end }}
+                                </a></li>
+                              </ul>
+                            {{ end }}
                         </div>
                     </section>
+
             {{ "<!-- Disqus Inject -->" | safeHTML }}
                 {{ if .Site.DisqusShortname }}
                   {{ partial "disqus.html" . }}
